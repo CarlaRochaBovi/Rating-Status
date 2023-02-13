@@ -92,6 +92,11 @@ button {
     color: hsl(25, 97%, 53%);
 }
 
+button:hover {
+    background: hsl(25, 97%, 53%);
+    color: white;
+}
+
 #after {
     display: none;
     flex-direction: column;
