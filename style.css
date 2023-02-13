@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 500;
+    color: white;
+    margin-bottom: 10px;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#app {
+
+    padding: 30px;
+    border-radius: 50px;
+    background: radial-gradient( ellipse at top, hsl(213, 19%, 18%) 0%, hsl(213, 19%, 10%) 100%);
+    width: 400px;
+    height: 400px;
+}
+
+.star {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: hsl(216, 12%, 54%);
+}
+
+form {
+    margin-block: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: hsl(216, 12%, 54%);
+    color: white;   
+    cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + h4 {
+    background: hsl(25, 97%, 53%);
+}
+
+button {
+    cursor: pointer;    
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    width: 100%;
+    background: white;
+    color: hsl(25, 97%, 53%);
+}
+
+#after {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#after img {
+    margin-top: 10px;
+}
+
+.outputP {
+    text-align: center;
+    margin-block: 30px;
+    width: fit-content;
+    padding: 10px; 
+    border-radius: 50px; 
+    background: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+}
+
+footer {
+    margin-top: 10px;
+    color: hsl(216, 12%, 54%);
+}
